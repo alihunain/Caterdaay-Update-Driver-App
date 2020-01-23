@@ -91,6 +91,15 @@
             <ion-col col-12 text-capitalize>{{orderDetail.paymenttype}}</ion-col>
         </ion-row> -->
     </ion-row>
+    <ion-row class="whiteDiv" *ngIf="orderDetail.driverinst != undefined && orderDetail.driverinst != '' ">
+        <ion-row class= "width100">
+            <ion-col col-12><strong>Driver Instruction : </strong><span text-capitalize>{{orderDetail.driverinst}}</span></ion-col>
+        </ion-row>
+        <!-- <hr class="width100 height2px">
+        <ion-row padding-horizontal class= "width100">
+            <ion-col col-12 text-capitalize>{{orderDetail.paymenttype}}</ion-col>
+        </ion-row> -->
+    </ion-row>
 
     <ion-row class="whiteDiv" *ngIf = "orderDetail.customerData">
         <ion-row class= "width100">

@@ -189,7 +189,7 @@ export class LoginPage {
 
 					this.events.publish("user:created");
 				} else {
-					this.getToast(response.data);
+					this.getToast("Bad Credentials");
 				}
 			},
 			err => {

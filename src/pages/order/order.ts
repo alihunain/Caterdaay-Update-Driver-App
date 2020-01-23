@@ -181,17 +181,17 @@ export class OrderPage {
               return (index.status == 'delivered' && index.driverDetail['_id'] == this.driver['_id']);
             }
           });
-          this.pendorders = new Array();
-          this.compOrders = new Array();
+          this.pendorders = pendingorders;
+          this.compOrders = completeOrders;
          
-          for(let i =pendingorders.length-1;i >=0;i--){
+          // for(let i =pendingorders.length-1;i >=0;i--){
          
-            this.pendorders.push(pendingorders[i]);
-          }
+          //   this.pendorders.push(pendingorders[i]);
+          // }
           
-          for(let i =completeOrders.length-1;i >=0;i--){
-            this.compOrders.push(completeOrders[i]);
-          }
+          // for(let i =completeOrders.length-1;i >=0;i--){
+          //   this.compOrders.push(completeOrders[i]);
+          // }
         
         }
       }
